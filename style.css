@@ -1,0 +1,348 @@
+@font-face {
+    font-family: neu;
+    src: url(Fonts/neuemachina-regular.otf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    background-color: transparent;  
+    color: white;
+    font-family: Helvetica;
+
+    /* For Sticky Navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    gap: 5px;
+}
+
+
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    gap: 35px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav3{
+    display: none;
+}
+
+.nav3 i{
+    font-size: 30px;
+}
+
+/* Section 1 */
+
+.section1{
+    padding: 95px 30px;
+    background-image: url(Images/purplebg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+
+.section1 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: neu;
+    color: white;
+    gap: 20px;
+}
+
+.section1 .content h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.section1 .content h4{
+    font-size: 50px;
+}
+
+.section1 .content p{
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.section1 .imageContainer{
+    width: 350px;
+    height: 300px;
+    border: 5px solid white;
+}
+
+.section1 .imageContainer .innerDesign{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+.section1 .imageContainer .innerDesign img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+/* Section 2 */
+
+.section2{
+    background-color: #55195d;
+    color: white;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.section2 .heading h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.section2 .projectsContainer{
+    display: flex;
+    gap: 50px;
+}
+
+.section2 .projectsContainer .card{
+    border: 2px solid white;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    width: 320px;
+}
+
+.section2 .projectsContainer .card .imageContainer{
+    width: 290px;
+    /* height: 500px; */
+    aspect-ratio: 3/4;
+}
+
+.section2 .projectsContainer .card .imageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.section2 .projectsContainer .card .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: neu;
+    padding: 0 30px;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.section2 .projectsContainer .card .content h2{
+    font-size: 24px;
+}
+
+.section2 .projectsContainer .card .content p{
+    font-size: 12px;
+}
+
+.section2 .projectsContainer .card .content .languagesContainer{
+    display: flex;
+    gap: 15px 10px;
+    max-width: 260px;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.section2 .projectsContainer .card .content .languagesContainer p{
+    text-transform: capitalize;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer{
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+    max-width: 260px;
+    padding: 8px 20px 0;
+    font-family: neu;
+    margin-top: 20px;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer .viewProjectDiv{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer .viewProjectDiv h3{
+    font-size: 18px;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer .viewProjectDiv a{
+    color: white;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer .viewProjectDiv i{
+    font-size: 23px;
+}
+
+
+.section2 .projectsContainer .card .projectLinkContainer .viewGithubDiv{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer .viewGithubDiv h3{
+    font-size: 18px;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer .viewGithubDiv a{
+    color: white;
+}
+
+.section2 .projectsContainer .card .projectLinkContainer .viewGithubDiv i{
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1025px){
+    nav{
+        padding: 3vw;
+    }
+    .section1{
+        gap: 15vw;
+    }
+    .section1 .content h4{
+        font-size: 4.1vw;
+    }
+    .section1 .content p{
+        font-size: 2vw;
+    }
+    .section1 .imageContainer{
+        width: 32vw;
+        height: 30vw;
+    }
+}
+
+@media (max-width: 770px){
+    .section1{
+        gap: 10vw;
+    }
+    .section1 .content h2{
+        font-size: 3vw;
+    }
+    .section1 .content h4{
+        font-size: 4.5vw;
+    }
+    .section1 .content p{
+        font-size: 2vw;
+    }
+    .section1 .imageContainer{
+        width: 32vw;
+        height: 30vw;
+    }
+}
+
+
+@media (max-width: 430px){
+    .nav1{
+        font-size: 3vw;
+    }
+    .nav1 img{
+        width: 30px;
+        height: 40px;
+    }
+    .nav2{
+        display: none;
+    }
+    .nav3{
+        display: flex;
+    }
+
+    .section1{
+        flex-direction: column;
+        gap: 10vw;
+    }
+    .section1 .content h2{
+        font-size: 5vw;
+    }
+    .section1 .content h4{
+        font-size: 7.6vw;
+    }
+    .section1 .content p{
+        font-size: 3.1vw;
+    }
+    .section1 .imageContainer{
+        width: 80vw;
+        height: 60vw;
+    }
+
+    .section2 .projectsContainer{
+        flex-direction: column;
+    }
+    .section2 .heading h2{
+        font-size: 5.8vw;
+    }
+    .section2 .projectsContainer .card{
+        width: 70vw;
+    }
+    .section2 .projectsContainer .card .imageContainer{
+        width: 50vw;
+    }
+    .section2 .projectsContainer .card .content h2{
+        font-size: 6vw;
+    }
+    .section2 .projectsContainer .card .content p{
+        font-size: 3vw;
+    }
+    .section2 .projectsContainer .card .projectLinkContainer{
+        
+    }
+}
